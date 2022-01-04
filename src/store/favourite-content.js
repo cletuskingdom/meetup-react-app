@@ -12,6 +12,7 @@ export function FavouritesContextProvider(props) {
   const [userFavourites, setUserFavourites] = useState([]);
 
   function addFavouritesHandler(favouriteMeetup) {
+    //   you can use a storage meduim to store the number of favourites permanently
     setUserFavourites((prevUserFavourites) => {
       return prevUserFavourites.concat(favouriteMeetup);
     });
